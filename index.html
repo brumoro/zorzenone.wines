@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito web fico — Coming soon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+	body {
+	  min-height: 100vh;
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+	  align-items: center;
+	  text-align: center;
+	  font-family: Arial, Helvetica, sans-serif;
+	  color: #fff;
+	  background: #111;
+	  overflow: hidden;
+	  padding: 4vh 2rem;
+	}
+
+    .background {
+      position: fixed;
+      inset: 0;
+      background-image: url("sfondo.jpg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.45);
+      z-index: -1;
+    }
+
+    .content {
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: clamp(1.1rem, 3vw, 2rem);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      opacity: 0.9;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+    }
+	.top {
+	  transform: translateY(-5vh);
+	}
+
+	.bottom {
+	  transform: translateY(2vh);
+	}
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+	<header class="top">
+	  <h1> </h1>
+	</header>
+
+	<footer class="bottom">
+	  <p>Coming soon...</p>
+	</footer>
+</body>
+</html>
